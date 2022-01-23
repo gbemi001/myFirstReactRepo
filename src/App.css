@@ -1,0 +1,48 @@
+* {
+  background-color: greenyellow;
+  box-sizing: border-box;
+  word-wrap: break-word;
+}
+form {
+  border: 2px solid greenyellow;
+  padding: 30px;
+}
+
+.App-form {
+  background-color: greenyellow;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+#male-player-image {
+  display: flex;
+  justify-content: flex-end;
+}
+h2 {
+  color: green;
+  animation-name: running;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes running {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+figure {
+  transform-origin: 0 0;
+  transition: transform 15s, filter 3s visibility 2s ease-in;
+}
+figure:hover {
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
